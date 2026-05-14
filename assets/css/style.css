@@ -18,26 +18,52 @@ body{
     margin: 0 auto;
 }
 
-
+/*HEADER-INICIO*/
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 99;
+}
+.nav{
+  padding: 2rem;
+}
+.nav_content{
+  display: flex;
+  align-items: center;
+}
+.nav_content img{
+  width: 7rem;
+}
+.nav_content > p{
+  font-size: 1.8em;
+  color: #1F2937;
+  font-weight: bold;
+}
 /*hamburguer menu*/
 #menu {
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 #menu-bar {
-  width: 45px;
-  height: 40px;
+  width: 4.5rem;
+  height: 4rem;
   /* Inverti a margem: agora os 20px de respiro ficam na direita */
-  margin: 30px 20px 20px 0; 
+  margin: 3rem 2rem 2rem 0; 
   cursor: pointer;
 }
 
 .bar {
-  height: 5px;
+  height: 0.5rem;
   width: 100%;
   background-color: #DC052D;
   display: block;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   transition: 0.3s ease;
 }
 
@@ -49,37 +75,35 @@ body{
   transform: translateY(4px);
 }
 
-.nav {
+.navHamburguer {
   transition: 0.3s ease;
   display: none;
-  /* Garante que o texto se alinhe à direita se preferir */
   text-align: right; 
 }
 
-.nav ul {
-  padding: 0 22px;
+.navHamburguer ul {
+  padding: 0 2.2rem;
 }
 
-.nav li {
+.navHamburguer li {
   list-style: none;
-  padding: 12px 0;
+  padding: 1.2rem 0;
 }
 
-.nav li a {
+.navHamburguer li a {
   color: white;
-  font-size: 20px;
+  font-size: 2em;
   text-decoration: none;
 }
 
-.nav li a:hover {
+.navHamburguer li a:hover {
   font-weight: bold;
 }
 
-/* ALTERAÇÃO CHAVE: Mudamos left para right */
 .menu-bg, #menu {
   top: 0;
   right: 0; 
-  left: auto; /* Anula o left anterior */
+  left: auto;
   position: absolute;
 }
 
@@ -87,8 +111,7 @@ body{
   z-index: 1;
   width: 0;
   height: 0;
-  /* Margem ajustada para a direita */
-  margin: 30px 20px 20px 0; 
+  margin: 3rem 2rem 2rem 0; 
   background: radial-gradient(circle, #DC052D, #DC052D);
   border-radius: 50%;
   transition: 0.3s ease;
@@ -115,86 +138,70 @@ body{
 }
 
 .change-bg {
-  width: 520px;
-  height: 460px;
+  width: 52rem;
+  height: 46rem;
   /* Ajustei o translate para 60% positivo para expandir da direita para a esquerda */
   transform: translate(60%, -25%); 
 }
 /*hamburguer menu*/
 
+/*HEADER-FINAL*/
+
+
+
+/*MAIN-INICIO*/
+main{
+  margin-top: 12rem;
+}
+/*SEÇÃO1-HOME-INICIO*/
 #home {
-  background: url('../img/sessãoum.jpg') no-repeat center center/cover;
+  background: url('../img/seção1.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 100dvh;
+  padding: 1.5rem;
 }
-
-
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  color: #fff;
-  text-align: center;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url('pizza-background.jpg') no-repeat center center/cover;
-  position: relative;
-}
-
-/* Camada escura para destacar o texto */
-body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 0;
-}
-
 .container {
   position: relative;
-  z-index: 1;
-  max-width: 600px;
-  padding: 20px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 8rem;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  font-weight: bold;
+#home h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+  color: white;
 }
 
-h2 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-  font-weight: 300;
+#home h2 {
+  font-size: 4.5rem;
+  color: #FA883D;
+  margin-bottom: 2rem;
+  font-weight: bolder;
 }
 
-p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+#home p {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  color: rgba(255, 255, 255, 0.795);
 }
 
 .buttons {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  border-radius: 2rem;
+  font-size: 1.6rem;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-weight: bold;
 }
 
 .btn-menu {
@@ -207,10 +214,61 @@ p {
 }
 
 .btn-contact {
-  background-color: #f1faee;
-  color: #333;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
 }
 
 .btn-contact:hover {
   background-color: #ccc;
+}
+/*SEÇÃO1-HOME-FINAL*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TABLET*/
+@media (min-width: 768px) {
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav_content p{
+    font-size: 2.2em;
+  }
+  #menu{
+    position: relative;
+  }
+
+  .menu-bg{
+    display: none;
+  }
+  #menu-bar{
+    display: none;
+  }
+  .navHamburguer{
+    display: flex;
+  }
+  .navHamburguer ul{
+    display: flex;
+    gap: 2rem;
+  }
+  .navHamburguer ul a{
+    color: black;
+  }
+  .buttons{
+    flex-direction: row;
+  }
 }

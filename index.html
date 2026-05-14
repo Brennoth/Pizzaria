@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <!-- Meta Tags Essenciais -->
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=devipce-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=devipce-width, initial-scale=1.0">
     <meta name="description" content="Pizzaria - As melhores pizzas da região. Entrega rápida e qualidade garantida.">
     <meta name="keywords" content="pizzaria, pizza, delivery, food">
     <meta name="author" content="">
     <meta name="theme-color" content="#FF6B35">
-    
+
     <!-- Open Graph (Redes Sociais) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pizzaria">
     <meta property="og:description" content="As melhores pizzas da região. Entrega rápida e qualidade garantida.">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
+
     <!--FONTE-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,20 +28,27 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    
+
     <title>Pizzaria - Inicio</title>
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
-        <nav>
+        <nav class="nav">
+            <div class="nav_content">
+                <a href="index.html"><img src="assets/img/logo.jpg" alt="logo-da-loja"></a>
+                <p>Pizzaria moderna</p>
+            </div>
+
+
             <div id="menu">
                 <div id="menu-bar">
                     <div id="bar1" class="bar"></div>
                     <div id="bar2" class="bar"></div>
                     <div id="bar3" class="bar"></div>
                 </div>
-                <div class="nav" id="nav">
+                <div class="navHamburguer" id="nav">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -50,52 +58,60 @@
                 </div>
             </div>
             <div class="menu-bg" id="menu-bg"></div>
-
         </nav>
     </header>
-    
+
     <!-- CONTEÚDO PRINCIPAL -->
-     <main>
+    <main>
 
         <section id="home">
-            <h1>Bem-vindo à Pizzaria</h1>
-          <div class="container">
-    <h1>Pizzas Artesanais</h1>
-    <h2>Sabor Incomparável</h2>
-    <p>Feitas com ingredientes frescos e massa artesanal no forno a lenha</p>
-    <div class="buttons">
-      <button class="btn btn-menu">Ver Cardápio</button>
-      <button class="btn btn-contact">Entre em Contato</button>
-    </div>
-  </div>  
+            <div class="container">
+                <h1>Pizzas Artesanais</h1>
+                <h2>Sabor Incomparável</h2>
+                <p>Feitas com ingredientes frescos e massa artesanal no forno a lenha</p>
+                <div class="buttons">
+                    <button class="btn btn-menu">Ver Cardápio</button>
+                    <button class="btn btn-contact">Entre em Contato</button>
+                </div>
+            </div>
         </section>
-
 
         <section id="menu">
-            <h2>Cardápio</h2>
+
+        </section>
+
+        <section id="nossaHistoria">
             
         </section>
 
-        
-        <section id="sobre">
-            <h2>Sobre Nós</h2>
-            
+        <section id="diferenciais">
+    
         </section>
 
+        <section id="dizemNossosClientes">
 
-        <section id="contato">
-            <h2>Contato</h2>
-            
         </section>
-    </main> 
+
+        <section class="galeria">
+
+        </section>
+
+        <section class="reserva">
+
+        </section>
+
+        <section class="entreContato">
+
+        </section>
+    </main>
 
     <!-- RODAPÉ -->
-    <!-- <footer>
-        <p>&copy; 2026 Pizzaria. Todos os direitos reservados.</p>
-    </footer> -->
+    <footer>
+        
+    </footer>
 
     <!-- JavaScript -->
     <script src="assets/js/menu.js" type="module"></script>
 </body>
-</html>
 
+</html>
