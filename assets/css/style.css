@@ -272,3 +272,113 @@ main{
     flex-direction: row;
   }
 }
+/* Estilização Geral nossa historia */
+.nossa-historia {
+    padding: 60px 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espaço entre imagem e texto */
+}
+
+/* Imagem com bordas arredondadas e sombra */
+.historia-imagem img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+/* Conteúdo */
+.historia-conteudo h2 {
+    font-size: 2.5rem;
+    color: #001d3d; /* Azul escuro do título */
+    margin-bottom: 10px;
+}
+
+.linha-detalhe {
+    width: 50px;
+    border: 2px solid #e63946; /* Linha laranja/vermelha */
+    margin-bottom: 20px;
+}
+
+.historia-conteudo p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Grid de Estatísticas */
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.stat-numero {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    margin-top: 9cqb;
+}
+
+/* Botão Laranja */
+.btn-conheca {
+    display: inline-block;
+    background-color: #f35b25; /* Laranja da imagem */
+    color: white;
+    padding: 22px 50px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-conheca:hover {
+    background-color: #d44a1b;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .linha-detalhe {
+        margin: 0 auto 20px;
+    }
+}
+
+
+/* Ajuste para telas menores (Tablets e Celulares) */
+@media (max-width: 992px) {
+    .container-historia {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .separador {
+        margin: 0 auto 30px;
+    }
+
+    .stats-grid {
+        gap: 30px;
+    }
+}
