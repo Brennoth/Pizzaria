@@ -19,9 +19,6 @@ body{
 }
 
 
-
-
-
 /*hamburguer menu*/
 #menu {
   z-index: 2;
@@ -124,6 +121,11 @@ body{
   transform: translate(60%, -25%); 
 }
 /*hamburguer menu*/
+
+#home {
+  background: url('../img/sessãoum.jpg') no-repeat center center/cover;
+}
+
 
 /* Reset básico */
 * {
