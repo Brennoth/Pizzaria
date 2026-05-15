@@ -272,7 +272,7 @@ main{
     flex-direction: row;
   }
 }
-/* Estilização Geral nossa historia */
+/* Estilização Geral */
 .nossa-historia {
     padding: 60px 20px;
     font-family: 'Arial', sans-serif;
@@ -289,8 +289,9 @@ main{
 
 /* Imagem com bordas arredondadas e sombra */
 .historia-imagem img {
+  
     width: 100%;
-    max-width: 500px;
+    max-width: 500cqb;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
@@ -309,6 +310,7 @@ main{
 }
 
 .historia-conteudo p {
+   font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
     color: #555;
@@ -330,7 +332,7 @@ main{
 
 .stat-item p {
     font-size: 0.9rem;
-    margin-top: 9cqb;
+    margin-top: 5px;
 }
 
 /* Botão Laranja */
@@ -338,7 +340,7 @@ main{
     display: inline-block;
     background-color: #f35b25; /* Laranja da imagem */
     color: white;
-    padding: 22px 50px;
+    padding: 12px 30px;
     border-radius: 25px;
     text-decoration: none;
     font-weight: bold;
@@ -347,6 +349,23 @@ main{
 
 .btn-conheca:hover {
     background-color: #d44a1b;
+}
+
+/* Responsividade para Celular */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .linha-detalhe {
+        margin: 0 auto 20px;
+    }
 }
 
 /* Responsividade para Celular */
