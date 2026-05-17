@@ -350,9 +350,143 @@ main{
 
 
 /*SEÇÃO4-DIFERENCIAIS-INICIO*/ 
-/*colocar todo codigo da seção DIFERENCIAIS dessa linha ate em baixo*/
+#diferenciais {
+    background-color: #121824; /* Fundo azul escuro idêntico à imagem */
+    padding: 8rem 2rem;
+    color: #ffffff;
+}
 
+.diferenciais-container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
+.diferenciais-header {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.diferenciais-header h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Detalhe da linha laranja embaixo do título principal */
+.diferenciais-header h2::after {
+    content: '';
+    position: absolute;
+    bottom: -0.8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.3rem;
+    background-color: #f35b25;
+}
+
+.diferenciais-header p {
+    font-size: 1.6rem;
+    color: #9ca3af;
+    margin-top: 1.5rem;
+}
+
+/* Grid dos 4 Cards */
+.diferenciais-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 8rem;
+}
+
+.diferencial-card {
+    background-color: #1a2333; /* Cor interna das caixas */
+    border: 1px solid #243047;
+    border-radius: 1.5rem;
+    padding: 3.5rem 2.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.diferencial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Círculo dos Ícones */
+.icon-wrapper {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-color: #f35b25; /* Fundo circular laranja */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.icon-wrapper svg {
+    color: #ffffff;
+    width: 2.6rem;
+    height: 2.6rem;
+}
+
+.diferencial-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.diferencial-card p {
+    font-size: 1.4rem;
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
+/* Seção de Números/Estatísticas debaixo dos cards */
+.diferenciais-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    text-align: center;
+    border-top: 1px solid #243047;
+    padding-top: 6rem;
+}
+
+.stat-box .stat-number {
+    display: block;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #f35b25; /* Números em destaque laranja */
+    margin-bottom: 0.5rem;
+}
+
+.stat-box .stat-label {
+    font-size: 1.4rem;
+    color: #9ca3af;
+}
+
+/* Responsividade da Seção para Tablets */
+@media (min-width: 600px) {
+    .diferenciais-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+    .diferenciais-stats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Responsividade da Seção para Desktops / Telas Grandes */
+@media (min-width: 1024px) {
+    .diferenciais-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 /*SEÇÃO4-DIFERENCIAIS-FINAL*/ 
 
 
@@ -451,7 +585,3 @@ main{
         margin: 0 auto 20px;
     }
 }
-
-
-
-
