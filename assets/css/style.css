@@ -401,3 +401,217 @@ main{
         gap: 30px;
     }
 }
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 15px 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_content img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.nav_content p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* MENU HAMBÚRGUER */
+#menu-bar {
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+/* SEÇÃO HOME */
+#home {
+  background: url('../img/pizza-background.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+#home .container {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+#home h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+#home h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+#home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-menu {
+  background-color: #e63946;
+  color: #fff;
+}
+
+.btn-menu:hover {
+  background-color: #b71c1c;
+}
+
+.btn-contact {
+  background-color: #f1faee;
+  color: #333;
+}
+
+.btn-contact:hover {
+  background-color: #ccc;
+}
+
+/* SEÇÃO NOSSA HISTÓRIA */
+.nossa-historia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  background-color: #fafafa;
+}
+
+.nossa-historia .container {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  align-items: center;
+}
+
+.historia-imagem img {
+  width: 500px;
+  border-radius: 10px;
+}
+
+.historia-conteudo {
+  max-width: 600px;
+}
+
+.historia-conteudo h2 {
+  font-size: 2.5rem;
+  color: #e63946;
+}
+
+.linha-detalhe {
+  width: 80px;
+  height: 4px;
+  background-color: #e63946;
+  border: none;
+  margin: 10px 0 20px;
+}
+
+.historia-conteudo p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.stats-container {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-numero {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #e63946;
+}
+
+.btn-conheca {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #e63946;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-conheca:hover {
+  background-color: #b71c1c;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
