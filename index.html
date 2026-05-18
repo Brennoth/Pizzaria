@@ -44,7 +44,7 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" onclick="acaoBotaoContato()">Contact</a></li>
                         <li><a href="#">Blog</a></li>
                     </ul>
                 </div>
@@ -62,7 +62,7 @@
                 <p>Feitas com ingredientes frescos e massa artesanal no forno a lenha</p>
                 <div class="buttons">
                     <button class="btn btn-menu">Ver Cardápio</button>
-                    <button class="btn btn-contact">Entre em Contato</button>
+                    <button class="btn btn-contact" onclick="acaoBotaoContato()">Entre em Contato</button>
                 </div>
             </div>
         </section>
@@ -111,17 +111,22 @@
 
         <section id="diferenciais">
             <div class="diferenciais-container">
-                
+
                 <div class="diferenciais-header">
                     <h2>Nossos Diferenciais</h2>
                     <p>O que torna nossas pizzas verdadeiramente especiais</p>
                 </div>
 
                 <div class="diferenciais-grid">
-                    
+
                     <div class="diferencial-card">
                         <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" />
+                            </svg>
                         </div>
                         <h3>Forno a Lenha Tradicional</h3>
                         <p>Assadas a 400°C para garantir aquela crosta crocante perfeita e sabor defumado único</p>
@@ -129,7 +134,12 @@
 
                     <div class="diferencial-card">
                         <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
                         </div>
                         <h3>Massa Fermentada 48h</h3>
                         <p>Fermentação natural lenta que resulta em leveza, digestibilidade e sabor incomparável</p>
@@ -137,15 +147,26 @@
 
                     <div class="diferencial-card">
                         <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
                         </div>
                         <h3>Ingredientes Premium</h3>
-                        <p>Selecionamos os melhores fornecedores: queijos importados, tomates orgânicos e temperos frescos</p>
+                        <p>Selecionamos os melhores fornecedores: queijos importados, tomates orgânicos e temperos
+                            frescos</p>
                     </div>
 
                     <div class="diferencial-card">
                         <div class="icon-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7" />
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88" />
+                            </svg>
                         </div>
                         <h3>Prêmios &amp; Reconhecimento</h3>
                         <p>Eleita melhor pizzaria da região por 3 anos consecutivos pelos nossos clientes</p>
@@ -174,21 +195,21 @@
 
             </div>
         </section>
-            
+
         <section id="dizemNossosClientes">
-            
+
         </section>
 
         <section class="galeria">
-            
+
         </section>
 
         <section class="reserva">
-            
+            <button class="btn-reserva" onclick="acaoBotaoReserva()">Reservar uma Mesa</button>
         </section>
 
         <section class="entreContato">
-            
+
         </section>
     </main>
 
@@ -197,6 +218,7 @@
     </footer>
 
     <script src="assets/js/menu.js" type="module"></script>
+    <script src="assets/js/whatsapp.js"></script>
 </body>
 
 </html>
