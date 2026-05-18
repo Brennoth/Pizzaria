@@ -65,6 +65,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // 4. Integração automática com o seu WhatsApp
     mOrder.addEventListener("click", () => {
         const mensagem = encodeURIComponent(`Olá! Vi no site o prato *${mTitle.textContent}* e gostaria de saber mais.`);
-        window.open(`https://wa.me/5500000000000?text=${mensagem}`, "_blank"); // Substitua os zeros pelo seu número real
+        window.open(`https://wa.me/5521999983971?text=${mensagem}`, "_blank"); // Substitua os zeros pelo seu número real
     });
 });
