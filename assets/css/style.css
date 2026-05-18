@@ -492,7 +492,178 @@ main{
 
 /*SEÇÃO5-dizemNossosClientes-INICIO*/ 
 /*colocar todo codigo da seção dizemNossosClientes dessa linha ate em baixo*/
+/* ===== SEÇÃO: O QUE DIZEM NOSSOS CLIENTES ===== */
+#dizemNossosClientes {
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+}
 
+.clientes-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.clientes-header h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.clientes-header h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #e63b2e;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+.clientes-header p {
+  color: #666;
+  font-size: 1.8rem;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.carrossel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.carrossel-track {
+  flex: 1;
+  overflow: hidden;
+}
+
+.depoimento-card {
+  display: none;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.depoimento-card.ativo {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.aspas {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 5rem;
+  color: #f5c6c3;
+  line-height: 1;
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+.estrelas {
+  font-size: 2rem;
+  color: #f5a623;
+  margin-bottom: 18px;
+}
+
+.texto-depoimento {
+  font-size: 1.55rem;
+  color: #333;
+  line-height: 1.7;
+  max-width: 580px;
+  margin: 0 auto 28px;
+}
+
+.cliente-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #e63b2e;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cliente-nome {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.cliente-tipo {
+  font-size: 1.1rem;
+  color: #888;
+  margin: 2px 0 0;
+}
+
+.carrossel-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1.5px solid #ccc;
+  background: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.carrossel-btn:hover {
+  border-color: #e63b2e;
+  color: #e63b2e;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 28px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.ativo {
+  background-color: #e63b2e;
+  width: 28px;
+  border-radius: 5px;
+}
+// setInterval(() => irPara(atual + 1), 5000);
 
 /*SEÇÃO5-dizemNossosClientes-FINAL*/ 
 
