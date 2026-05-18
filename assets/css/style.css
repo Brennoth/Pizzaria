@@ -666,6 +666,25 @@ main {
 
 /*SEÇÃO6-galeria-INICIO*/
 /*colocar todo codigo da seção galeria dessa linha ate em baixo*/
+/* Zoom suave na imagem ao passar o mouse no card */
+div[style*='border-radius: 12px'] {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+div[style*='border-radius: 12px']:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+div[style*='border-radius: 12px']:hover img {
+  transform: scale(1.08);
+}
+
+div[style*='border-radius: 12px'] img {
+  transition: transform 0.3s ease;
+}
 
 /*SEÇÃO6-galeria-FINAL*/
 
