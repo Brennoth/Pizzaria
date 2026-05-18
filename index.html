@@ -67,8 +67,144 @@
             </div>
         </section>
 
-        <section id="menu">
+        <section id="menu" style="display: flex; justify-content: center; align-items: center; padding: 60px 20px; background-color: #f9f9f9; width: 100%; box-sizing: border-box;">
+            <div style="width: 100%; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
+                
+                <div style="text-align: center; margin-bottom: 40px; display: flex; flex-direction: column; align-items: center;">
+                    <h2 style="font-size: 2.5rem; color: #333; margin: 0 0 10px 0; font-family: 'Poppins', sans-serif;">Nosso Cardápio</h2>
+                    <p style="font-size: 1rem; color: #666; margin: 0; font-family: 'Poppins', sans-serif; max-width: 600px;">Pizzas artesanais preparadas com ingredientes selecionados e muito amor</p>
+                </div>
 
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%; box-sizing: border-box; justify-content: center;">
+                    
+                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <div style="width: 100%; height: 220px; overflow: hidden;">
+                            <img src="assets/img/margherita.jpg" alt="Margherita" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Margherita</h3>
+                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Molho de tomate, mussarela, manjericão fresco e azeite</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 45,00</span>
+                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <div style="width: 100%; height: 220px; overflow: hidden;">
+                            <img src="assets/img/pepperoni.jpg" alt="Pepperoni" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Pepperoni</h3>
+                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Molho de tomate, mussarela e pepperoni italiano</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 52,00</span>
+                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <div style="width: 100%; height: 220px; overflow: hidden;">
+                            <img src="assets/img/quattro-formaggi.jpg" alt="Quattro Formaggi" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Quattro Formaggi</h3>
+                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Quatro queijos especiais com rúcula</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 58,00</span>
+                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <div style="width: 100%; height: 220px; overflow: hidden;">
+                            <img src="assets/img/vegetariana.jpg" alt="Vegetariana" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Vegetariana</h3>
+                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Pimentões, cogumelos, azeitonas, cebola e tomate</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 48,00</span>
+                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <div style="width: 100%; height: 220px; overflow: hidden;">
+                            <img src="assets/img/calabresa.jpg" alt="Calabresa" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Calabresa</h3>
+                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Calabresa artesanal, cebola, azeitonas e orégano</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 50,00</span>
+                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
+                        <div style="width: 100%; height: 220px; overflow: hidden;">
+                            <img src="assets/img/frango-catupiry.jpg" alt="Frango Catupiry" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Frango Catupiry</h3>
+                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Frango desfiado, catupiry, milho e azeitonas</p>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 54,00</span>
+                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <section class="nossa-historia">
@@ -219,6 +355,7 @@
 
     <script src="assets/js/menu.js" type="module"></script>
     <script src="assets/js/whatsapp.js"></script>
+    <script src="assets/js/detalhes.js"></script>
 </body>
 
 </html>
