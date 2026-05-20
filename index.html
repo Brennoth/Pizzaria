@@ -411,7 +411,56 @@
         </section>
 
         <section class="galeria">
-
+            <div class="galeria-container">
+        
+                <div class="galeria-header">
+                    <h2>Galeria</h2>
+                    <p>Momentos especiais e sabores inesquecíveis</p>
+                </div>
+        
+                <div class="slider-wrapper">
+                    <img id="galeriaPrincipal" src="assets/img/chefe-pizzaria.jpg" alt="Pizza Artesanal">
+        
+                    <div class="slider-overlay">
+                        <h3 id="galeriaTitulo">Nosso Chef</h3>
+                        <p id="galeriaDescricao">Mestre pizzaiolo com 20 anos de experiência</p>
+                    </div>
+        
+                    <button class="slider-nav-btn prev" id="galeriaPrev" aria-label="Anterior">&#8249;</button>
+                    <button class="slider-nav-btn next" id="galeriaNext" aria-label="Próximo">&#8250;</button>
+        
+                    <div class="slider-dots" id="galeriaDots">
+                        <span class="galeria-dot ativo" data-index="0"></span>
+                        <span class="galeria-dot" data-index="1"></span>
+                        <span class="galeria-dot" data-index="2"></span>
+                        <span class="galeria-dot" data-index="3"></span>
+                        <span class="galeria-dot" data-index="4"></span>
+                        <span class="galeria-dot" data-index="5"></span>
+                    </div>
+                </div>
+        
+                <div class="thumb-container" id="thumbContainer">
+                    <div class="thumb-item ativo" data-index="0">
+                        <img src="assets/img/chefe-pizzaria.jpg" alt="Miniatura 1">
+                    </div>
+                    <div class="thumb-item" data-index="1">
+                        <img src="assets/img/Margherita.png" alt="Miniatura 2">
+                    </div>
+                    <div class="thumb-item" data-index="2">
+                        <img src="assets/img/Pepperoni.png" alt="Miniatura 3">
+                    </div>
+                    <div class="thumb-item" data-index="3">
+                        <img src="assets/img/Quattro Formaggi.jpg" alt="Miniatura 4">
+                    </div>
+                    <div class="thumb-item" data-index="4">
+                        <img src="assets/img/Vegetariana.png" alt="Miniatura 5">
+                    </div>
+                    <div class="thumb-item" data-index="5">
+                        <img src="assets/img/Calabresa.png" alt="Miniatura 6">
+                    </div>
+                </div>
+        
+            </div>
         </section>
 
         <section class="reserva">
@@ -431,6 +480,7 @@
     <script src="assets/js/whatsapp.js"></script>
     <script src="assets/js/detalhes.js"></script>
     <script src="assets/js/depoimentos.js" type="module"></script>
+    <script src="assets/js/galeria-carrosel.js"></script>
 </body>
 
 </html>
