@@ -21,13 +21,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.scss">
 
     <title>Pizzaria - Inicio</title>
 </head>
 
 <body>
     <header>
-        <nav class="nav">
+        <nav class="largura-definida nav">
             <div class="nav_content">
                 <a href="index.html"><img src="assets/img/logo.jpg" alt="logo-da-loja"></a>
                 <p>Pizzaria moderna</p>
@@ -42,10 +43,10 @@
                 </div>
                 <div class="navHamburguer" id="nav">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#" onclick="acaoBotaoContato()">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#cardápio">Cardápio</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,159 +57,169 @@
     <main>
 
         <section id="home">
-            <div class="container">
+            <div class="largura-definida container">
                 <h1>Pizzas Artesanais</h1>
                 <h2>Sabor Incomparável</h2>
                 <p>Feitas com ingredientes frescos e massa artesanal no forno a lenha</p>
                 <div class="buttons">
-                    <button class="btn btn-menu">Ver Cardápio</button>
-                    <button class="btn btn-contact" onclick="acaoBotaoContato()">Entre em Contato</button>
+                    <a  href="#cardápio" class="btn btn-menu">Ver Cardápio</a>
+                    <a  href="#contato" class="btn btn-contact" >Entre em Contato</a>
                 </div>
             </div>
         </section>
 
-        <section id="cardápio" style="display: flex; justify-content: center; align-items: center; padding: 60px 20px; background-color: #f9f9f9; width: 100%; box-sizing: border-box;">
-            <div style="width: 100%; max-width: 1200px; display: flex; flex-direction: column; align-items: center;">
-
-                <div style="text-align: center; margin-bottom: 40px; display: flex; flex-direction: column; align-items: center;">
-                    <h2 style="font-size: 2.5rem; color: #333; margin: 0 0 10px 0; font-family: 'Poppins', sans-serif;">Nosso Cardápio</h2>
-                    <p style="font-size: 1rem; color: #666; margin: 0; font-family: 'Poppins', sans-serif; max-width: 600px;">Pizzas artesanais preparadas com ingredientes selecionados e muito amor</p>
+        <section id="cardápio">
+            <div class="menu-container">
+        
+                <div class="menu-header">
+                    <h2 class="menu-title">Nosso Cardápio</h2>
+                    <p class="menu-subtitle">Pizzas artesanais preparadas com ingredientes selecionados e muito amor</p>
                 </div>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; width: 100%; box-sizing: border-box; justify-content: center;">
-
-                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                        <div style="width: 100%; height: 220px; overflow: hidden;">
-                            <img src="assets/img/Margherita.png" alt="Margherita" style="width: 100%; height: 100%; object-fit: cover;">
+        
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="card-image">
+                            <img src="assets/img/Margherita.png" alt="Margherita">
                         </div>
-
-                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Margherita</h3>
-                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Margherita</h3>
+                                <button class="btn-favorite" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                        fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                     </svg>
                                 </button>
                             </div>
-                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Molho de tomate, mussarela, manjericão fresco e azeite</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 45,00</span>
-                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            <p class="card-desc">Molho de tomate, mussarela, manjericão fresco e azeite</p>
+                            <div class="card-footer">
+                                <span class="card-price">R$ 45,00</span>
+                                <button class="btn-details">Ver Detalhes</button>
                             </div>
                         </div>
                     </div>
-
-                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                        <div style="width: 100%; height: 220px; overflow: hidden;">
-                            <img src="assets/img/Pepperoni.png" alt="Pepperoni" style="width: 100%; height: 100%; object-fit: cover;">
+        
+                    <div class="menu-card">
+                        <div class="card-image">
+                            <img src="assets/img/Pepperoni.png" alt="Pepperoni">
                         </div>
-                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Pepperoni</h3>
-                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Pepperoni</h3>
+                                <button class="btn-favorite" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                        fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                     </svg>
                                 </button>
                             </div>
-                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Molho de tomate, mussarela e pepperoni italiano</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 52,00</span>
-                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            <p class="card-desc">Molho de tomate, mussarela e pepperoni italiano</p>
+                            <div class="card-footer">
+                                <span class="card-price">R$ 52,00</span>
+                                <button class="btn-details">Ver Detalhes</button>
                             </div>
                         </div>
                     </div>
-
-                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                        <div style="width: 100%; height: 220px; overflow: hidden;">
-                            <img src="assets/img/Quattro Formaggi.jpg" alt="Quattro Formaggi" style="width: 100%; height: 100%; object-fit: cover;">
+        
+                    <div class="menu-card">
+                        <div class="card-image">
+                            <img src="assets/img/Quattro Formaggi.jpg" alt="Quattro Formaggi">
                         </div>
-                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Quattro Formaggi</h3>
-                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Quattro Formaggi</h3>
+                                <button class="btn-favorite" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                        fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                     </svg>
                                 </button>
                             </div>
-                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Quatro queijos especiais com rúcula</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 58,00</span>
-                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            <p class="card-desc">Quatro queijos especiais com rúcula</p>
+                            <div class="card-footer">
+                                <span class="card-price">R$ 58,00</span>
+                                <button class="btn-details">Ver Detalhes</button>
                             </div>
                         </div>
                     </div>
-
-                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                        <div style="width: 100%; height: 220px; overflow: hidden;">
-                            <img src="assets/img/Vegetariana.png" alt="Vegetariana" style="width: 100%; height: 100%; object-fit: cover;">
+        
+                    <div class="menu-card">
+                        <div class="card-image">
+                            <img src="assets/img/Vegetariana.png" alt="Vegetariana">
                         </div>
-                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Vegetariana</h3>
-                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Vegetariana</h3>
+                                <button class="btn-favorite" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                        fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                     </svg>
                                 </button>
                             </div>
-                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Pimentões, cogumelos, azeitonas, cebola e tomate</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 48,00</span>
-                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            <p class="card-desc">Pimentões, cogumelos, azeitonas, cebola e tomate</p>
+                            <div class="card-footer">
+                                <span class="card-price">R$ 48,00</span>
+                                <button class="btn-details">Ver Detalhes</button>
                             </div>
                         </div>
                     </div>
-
-                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                        <div style="width: 100%; height: 220px; overflow: hidden;">
-                            <img src="assets/img/Calabresa.png" alt="Calabresa" style="width: 100%; height: 100%; object-fit: cover;">
+        
+                    <div class="menu-card">
+                        <div class="card-image">
+                            <img src="assets/img/Calabresa.png" alt="Calabresa">
                         </div>
-                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Calabresa</h3>
-                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Calabresa</h3>
+                                <button class="btn-favorite" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                        fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                     </svg>
                                 </button>
                             </div>
-                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Calabresa artesanal, cebola, azeitonas e orégano</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 50,00</span>
-                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            <p class="card-desc">Calabresa artesanal, cebola, azeitonas e orégano</p>
+                            <div class="card-footer">
+                                <span class="card-price">R$ 50,00</span>
+                                <button class="btn-details">Ver Detalhes</button>
                             </div>
                         </div>
                     </div>
-
-                    <div style="background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column;">
-                        <div style="width: 100%; height: 220px; overflow: hidden;">
-                            <img src="assets/img/Frango Catupiry.png" alt="Frango Catupiry" style="width: 100%; height: 100%; object-fit: cover;">
+        
+                    <div class="menu-card">
+                        <div class="card-image">
+                            <img src="assets/img/Frango Catupiry.png" alt="Frango Catupiry">
                         </div>
-                        <div style="padding: 20px; display: flex; flex-direction: column; flex-grow: 1; font-family: 'Poppins', sans-serif;">
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                                <h3 style="margin: 0; font-size: 1.4rem; color: #333;">Frango Catupiry</h3>
-                                <button style="background: none; border: none; cursor: pointer; padding: 5px; display: flex; align-items: center;" aria-label="Favoritar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#A0AEC0" stroke-width="1.5">
-                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                        <div class="card-body">
+                            <div class="card-header-row">
+                                <h3 class="card-title">Frango Catupiry</h3>
+                                <button class="btn-favorite" aria-label="Favoritar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                        fill="none" stroke="#A0AEC0" stroke-width="1.5">
+                                        <path
+                                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                                     </svg>
                                 </button>
                             </div>
-                            <p style="color: #777; font-size: 0.95rem; margin: 0 0 20px 0; line-height: 1.5; flex-grow: 1;">Frango desfiado, catupiry, milho e azeitonas</p>
-                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
-                                <span style="font-size: 1.3rem; font-weight: 700; color: #333;">R$ 54,00</span>
-                                <button style="background-color: #FF6B35; color: #fff; border: none; padding: 10px 20px; font-size: 0.9rem; font-weight: 500; border-radius: 25px; cursor: pointer; transition: background 0.2s;">Ver Detalhes</button>
+                            <p class="card-desc">Frango desfiado, catupiry, milho e azeitonas</p>
+                            <div class="card-footer">
+                                <span class="card-price">R$ 54,00</span>
+                                <button class="btn-details">Ver Detalhes</button>
                             </div>
                         </div>
                     </div>
-
+        
                 </div>
             </div>
         </section>
 
-        <section class="nossa-historia">
+        <section id="sobre" class="nossa-historia">
             <div class="historiaContainer">
                 <div class="historia-imagem">
                     <img src="assets/img/Nossa historia.jpg" alt="Interior da Pizzaria Moderna">
@@ -463,80 +474,101 @@
             </div>
         </section>
 
-        <section class="entreContato" id="contato" style="padding: 60px 20px; background-color: #fff; display: flex; justify-content: center; font-family: 'Poppins', sans-serif;">
-            <div style="width: 100%; max-width: 1200px; display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px;">
-                
-                <div style="display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h2 style="font-size: 2.5rem; color: #333; margin: 0 0 10px 0;">Fale Conosco</h2>
-                        <p style="color: #666; font-size: 1rem; margin-bottom: 30px;">Tem alguma dúvida, crítica ou sugestão? Entre em contato preenchendo o formulário ou através dos nossos canais.</p>
-                        
-                        <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-                            <div style="background-color: #FFF0EA; color: #FF6B35; padding: 12px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <section class="entreContato" id="contato">
+            <div class="contact-container">
+        
+                <div class="contact-info">
+                    <div class="info-content">
+                        <h2 class="contact-title">Fale Conosco</h2>
+                        <p class="contact-subtitle">Tem alguma dúvida, crítica ou sugestão? Entre em contato preenchendo o
+                            formulário ou através dos nossos canais.</p>
+        
+                        <div class="info-item">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
                             </div>
-                            <div>
-                                <h4 style="margin: 0; color: #333; font-size: 1rem;">Telefone / WhatsApp</h4>
-                                <p style="margin: 0; color: #777; font-size: 0.95rem;">(21) 99998-3971</p>
-                            </div>
-                        </div>
-
-                        <div style="margin-bottom: 20px; display: flex; align-items: center; gap: 15px;">
-                            <div style="background-color: #FFF0EA; color: #FF6B35; padding: 12px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            </div>
-                            <div>
-                                <h4 style="margin: 0; color: #333; font-size: 1rem;">E-mail</h4>
-                                <p style="margin: 0; color: #777; font-size: 0.95rem;">contato@pizzariamoderna.com</p>
+                            <div class="item-text">
+                                <h4>Telefone / WhatsApp</h4>
+                                <p>(21) 99998-3971</p>
                             </div>
                         </div>
-
-                        <div style="margin-bottom: 30px; display: flex; align-items: center; gap: 15px;">
-                            <div style="background-color: #FFF0EA; color: #FF6B35; padding: 12px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+        
+                        <div class="info-item">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
                             </div>
-                            <div>
-                                <h4 style="margin: 0; color: #333; font-size: 1rem;">Endereço</h4>
-                                <p style="margin: 0; color: #777; font-size: 0.95rem;">Av. Atlântica, 1230 - Copacabana, Rio de Janeiro - RJ</p>
+                            <div class="item-text">
+                                <h4>E-mail</h4>
+                                <p>contato@pizzariamoderna.com</p>
+                            </div>
+                        </div>
+        
+                        <div class="info-item">
+                            <div class="icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="item-text">
+                                <h4>Endereço</h4>
+                                <p>Av. Atlântica, 1230 - Copacabana, Rio de Janeiro - RJ</p>
                             </div>
                         </div>
                     </div>
-
-                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4534.5930938685215!2d-43.17755142388826!3d-22.96515987921409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5554df01f93%3A0x2ff8fd8114345176!2sAv.%20Atl%C3%A2ntica%2C%201230%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022021-000!5e1!3m2!1spt-BR!2sbr!4v1779366940967!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                <div style="background-color: #F9FAFB; padding: 35px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.02);">
-                    <form action="#" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
-                        <div>
-                            <label for="nome" style="display: block; margin-bottom: 8px; color: #4A5568; font-weight: 500; font-size: 0.9rem;">Seu Nome</label>
-                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required style="width: 100%; padding: 12px 16px; border: 1px solid #E2E8F0; border-radius: 8px; font-family: 'Poppins', sans-serif; font-size: 0.95rem; box-sizing: border-box; outline: none; transition: border-color 0.2s;">
+        
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4534.5930938685215!2d-43.17755142388826!3d-22.96515987921409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd5554df01f93%3A0x2ff8fd8114345176!2sAv.%20Atl%C3%A2ntica%2C%201230%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022021-000!5e1!3m2!1spt-BR!2sbr!4v1779366940967!5m2!1spt-BR!2sbr"
+                        width="300" height="300" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+        
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
                         </div>
-
-                        <div>
-                            <label for="email" style="display: block; margin-bottom: 8px; color: #4A5568; font-weight: 500; font-size: 0.9rem;">Seu E-mail</label>
-                            <input type="email" id="email" name="email" placeholder="Ex: nome@email.com" required style="width: 100%; padding: 12px 16px; border: 1px solid #E2E8F0; border-radius: 8px; font-family: 'Poppins', sans-serif; font-size: 0.95rem; box-sizing: border-box; outline: none;">
+        
+                        <div class="form-group">
+                            <label for="email">Seu E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="Ex: nome@email.com" required>
                         </div>
-
-                        <div>
-                            <label for="assunto" style="display: block; margin-bottom: 8px; color: #4A5568; font-weight: 500; font-size: 0.9rem;">Assunto</label>
-                            <select id="assunto" name="assunto" style="width: 100%; padding: 12px 16px; border: 1px solid #E2E8F0; border-radius: 8px; font-family: 'Poppins', sans-serif; font-size: 0.95rem; color: #4A5568; box-sizing: border-box; outline: none; background-color: #fff;">
+        
+                        <div class="form-group">
+                            <label for="assunto">Assunto</label>
+                            <select id="assunto" name="assunto">
                                 <option value="duvida">Dúvidas gerais</option>
                                 <option value="elogio">Elogio</option>
                                 <option value="reclamacao">Sugestão / Reclamação</option>
                                 <option value="eventos">Eventos e Reservas</option>
                             </select>
                         </div>
-
-                        <div>
-                            <label for="mensagem" style="display: block; margin-bottom: 8px; color: #4A5568; font-weight: 500; font-size: 0.9rem;">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui o que você precisa..." required style="width: 100%; padding: 12px 16px; border: 1px solid #E2E8F0; border-radius: 8px; font-family: 'Poppins', sans-serif; font-size: 0.95rem; box-sizing: border-box; outline: none; resize: vertical;"></textarea>
+        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui o que você precisa..."
+                                required></textarea>
                         </div>
-
-                        <button type="submit" style="background-color: #FF6B35; color: #fff; border: none; padding: 14px; font-size: 1rem; font-weight: 600; border-radius: 8px; cursor: pointer; transition: background-color 0.2s; font-family: 'Poppins', sans-serif; width: 100%; box-shadow: 0 4px 12px rgba(255,107,53,0.2);">Enviar Mensagem</button>
+        
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
                     </form>
                 </div>
-
+        
             </div>
         </section>
+
     </main>
 
     <footer>
