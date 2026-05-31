@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             img: "assets/img/Pepperoni.png",
-            titulo: "Pepperoni Crocante",
+            titulo: "Pepperoni ",
             descricao: "O clássico queridinho com muito sabor e picância na medida"
         },
         {
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             img: "assets/img/Vegetariana.png",
-            titulo: "Opção Vegetariana",
+            titulo: "Vegetariana",
             descricao: "Pimentões, cogumelos, azeitonas, cebola e tomate frescos"
         },
         {
