@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', (e) => {  
   // 1. Cria a estrutura visual da janela de detalhes de forma limpa
   const overlay = document.createElement('div');
   overlay.className = 'modal-overlay';
@@ -30,12 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
     (el) => el.textContent.trim().toLowerCase() === 'ver detalhes',
   );
 
+
   botoes.forEach((botao) => {
     botao.addEventListener('click', (e) => {
       e.preventDefault();
 
       // Sobe até encontrar o container do card correspondente
-      const card = botao.closest("div[style*='border-radius: 12px']");
+      const card = botao.closest(".menu-card");
       if (!card) return;
 
       // Coleta os dados de dentro desse card específico
@@ -74,3 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
     window.open(`https://wa.me/5521999983971?text=${mensagem}`, '_blank'); // Substitua os zeros pelo seu número real
   });
 });
+
+
