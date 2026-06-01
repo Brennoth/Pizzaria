@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             img: "assets/img/Margherita.png",
-            titulo: "Margherita Tradicional",
+            titulo: "Margherita",
             descricao: "Molho de tomate fresco, mussarela premium e manjericão"
         },
         {
