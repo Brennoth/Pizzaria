@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         {
             img: "assets/img/Calabresa.png",
-            titulo: "Calabresa Artesanal",
+            titulo: "Calabresa",
             descricao: "Calabresa defumada com cebola fresca e orégano"
         }
     ];
